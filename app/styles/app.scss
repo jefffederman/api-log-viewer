@@ -1,1 +1,17 @@
 @import "bourbon";
+@import "typography";
+
+body, html {
+  padding: 1em;
+}
+.row {
+}
+
+.column {
+  width: 32%;
+  float: left;
+}
+
+.events {
+  list-style: none;
+}

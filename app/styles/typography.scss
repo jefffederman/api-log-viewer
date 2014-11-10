@@ -1,0 +1,163 @@
+
+/* OPEN SANS */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans: 300italic,400italic,600italic,700italic,300,400,600,700');
+
+/*
+** FONT STACK MIXINS
+*/
+
+@mixin open-sans {
+  font-family: "Open Sans", sans-serif;
+}
+
+
+/* DEFAULT TO OPEN SANS / DEFAULT SANS-SERIF */
+body { @include open-sans; }
+
+/*
+** ~ Headings
+*/
+
+h1, .alpha {
+  margin: 1em 0;
+  font: {
+    size: 1.875em;
+    weight: 300;
+  }
+  line-height: 1.2857em;
+  color: #2a4870;
+}
+
+h2, .beta {
+  font: {
+    size: 1.5em;
+    weight: 300;
+  }
+  line-height: 1.25em;
+  margin: 1em 0;
+  color: #2a4870;
+}
+
+h3, .gamma {
+  font: {
+    size: 1.25em;
+    weight: 600;
+  }
+  line-height: 1.3333em;
+  margin: 0.9em 0 0.6em 0;
+  color: #2a4870;
+}
+
+h4, .delta {
+  font: {
+    size: 1.125em;
+    weight: 700;
+  }
+  line-height: 1.5em;
+  margin: 1em 0 0.375em 0;
+  color: #2a4870;
+}
+
+h5, .epsilon {
+  font: {
+    size: 1em;
+    weight: 600;
+  }
+  line-height: 1.5;
+  margin: 0.75em 0;
+  color: #2a4870;
+}
+
+p {
+  font-size: 0.875em;
+  line-height: 1.7143em;
+  margin-bottom: 1.5em;
+  color: #444;
+  a {
+    border-bottom: 1px dotted #ccc;
+  }
+}
+
+a { color: #3b69a7; }
+
+em { font-weight: 400; font-style: italic; }
+
+ins {
+  padding: 0 2px;
+  background-color: #e2ecf9;
+  color: #222;
+  text-decoration: none;
+}
+
+mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom:1px dotted; cursor:help; }
+
+.small-text {
+  display: inline-block;
+  font-size: 0.875em;
+}
+
+ul, ol {
+  list-style-position: outside;
+  font-size: 0.875em;
+  line-height: 1.2857em;
+  margin-bottom: 1.5em;
+  padding-left: 24px;
+  color: #444;
+}
+
+pre {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-family: "Consolas", "Liberation Mono", "Courier", monospace;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  code {
+    border-radius: 3px;
+    display: block;
+    margin: 1.8462em 0;
+    padding: 0.8571em 1.8462em;
+    font-size: 0.8125em;
+    line-height: 1.8462em;
+    background: #f1f1f1 url('/assets/images/code-bg.gif') repeat left -13px;
+    border: 1px solid #eee;
+  }
+}
+
+code {
+  padding: 2px;
+  font-family: "Consolas", "Liberation Mono", "Courier", monospace;
+  font-size: 1.0714em;
+  background: #efefef;
+}
+
+
+/*
+** ~ Data-Tables
+*/
+
+dl {
+  margin-bottom: 1em;
+  font-size: 0.875em;
+  line-height: 1.5em;
+  color: #444;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: 1.5em;
+}
+
+dl > dd,
+dl > dt {
+  min-height: 18px;
+}
