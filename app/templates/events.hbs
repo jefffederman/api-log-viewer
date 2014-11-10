@@ -2,7 +2,7 @@
   <div class="column">
     <ul>
       {{#each event in model}}
-        <li>{{#link-to 'events.show' event}}{{event.description}}{{/link-to}}</li>
+        <li>{{#link-to 'events.show' event}}{{event.occurredAt}} - {{event.description}}{{/link-to}}</li>
       {{/each}}
     </ul>
   </div>

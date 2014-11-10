@@ -1,6 +1,6 @@
 <ul>
   {{#each request in model.requests}}
-    <li>{{request.requestUrl}}</li>
+    <li>{{request.occurredAt}} - {{request.requestUrl}}</li>
   {{/each}}
 </ul>
 {{outlet}}
