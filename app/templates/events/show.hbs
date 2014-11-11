@@ -1,6 +1,11 @@
-<ul>
-  {{#each request in model.requests}}
-    <li>{{request.occurredAt}} - {{request.requestUrl}}</li>
-  {{/each}}
-</ul>
-{{outlet}}
+<div class="column">
+  <ul>
+    {{#each request in model.requests}}
+      <li>{{#link-to 'events.show.requests.show' request}}{{request.occurredAt}} - {{request.requestUrl}}{{/link-to}}</li>
+    {{/each}}
+  </ul>
+</div>
+
+<div class="column">
+  {{outlet}}
+</div>

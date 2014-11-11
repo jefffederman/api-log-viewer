@@ -7,7 +7,11 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('events', function() {
-    this.route('show', { path: '/:id' });
+    this.route('show', { path: '/:id' }, function() {
+      this.route('requests', { path: '/requests' }, function() {
+        this.route('show', { path: '/:id' });
+      });
+    });
   });
 });
 
